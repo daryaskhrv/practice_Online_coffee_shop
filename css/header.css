@@ -13,9 +13,11 @@
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header .container img{
+    z-index: 10;
     width: 10vw;
 }
 
@@ -35,7 +37,6 @@
 }
 
 .nav__item:hover{
-    margin-right: 3vw;
     text-decoration-line: underline;
     color: #8d8d8d;
 }
@@ -62,8 +63,6 @@
 .nav__button-basket:hover svg{
     scale: 1.2;
     fill: rgb(97, 182, 97) ;
-    width: 2.5vw;
-    height: 2.5vw;
 }
 
 .nav__button-vouchers{
@@ -81,4 +80,125 @@
 
 .nav__button-vouchers:hover{
     background-color: #4f4f4f;
+}
+
+
+
+.header__icon{
+    display: none;
+}
+
+
+
+/* mobile ----------------------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+    .header .container {
+        padding: 25px 10vw 25px 10vw;
+    }
+
+    .header .container img{
+        width: 25vw;
+    }
+
+    .header__icon{
+        order: 1;
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+    .header__icon span,
+    .header__icon::before,
+    .header__icon::after{
+        left:0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #000000;
+    }
+
+    .header__icon::before,
+    .header__icon::after{
+        content: "";
+    }
+
+    .header__icon::before{
+        top: 0;
+    }
+
+    .header__icon::after{
+        bottom: 0;
+    }
+
+    .header__icon span{
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+
+    .header__nav{
+        position: fixed;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        min-height: 500px;
+        height: 100vh;
+        background-color:  rgba(143, 194, 169, 0.95);
+        padding: 100px 30px 30px 10vw;
+        transition: left 0.3s ease 0s;
+        overflow: auto;
+    }
+
+    .header__nav._active{
+        left: 0;
+    }
+
+    .nav__item{
+        font-size: 5vw;
+        color: #ffffff;
+        margin-bottom: 3vw;
+    }
+
+    .nav__button-basket {
+        margin-bottom: 3vw;
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .nav__button-basket svg{
+        width: 4vw;
+        height: 4vw;
+    }
+    
+    .nav__button-basket:hover svg{
+        scale: 1.4;
+    }
+    
+    .nav__button-vouchers{
+        height: 10vw;
+        padding: 0 4vw 0 4vw;
+        border-radius: 8vw;
+        font-size: 3vw;
+    }
+
+    .header__icon._active span{
+       transform: scale(0) translate(0px, -50%);
+    }
+
+    .header__icon._active::before{
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    .header__icon._active::after{
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+
 }

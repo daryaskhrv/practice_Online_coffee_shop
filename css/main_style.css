@@ -38,6 +38,10 @@ body {
     width: 100%;
 }
 
+body._lock {
+    overflow: hidden;
+}
+
 .container{
     width: 100%;
     padding-inline: 6%;
