@@ -47,19 +47,3 @@ body._lock {
     padding-inline: 6%;
     margin: 0 auto;
 }
-
-
-
-
-
-
-.info{
-    background-color: rgba(238, 239, 241, 1);
-    padding-top: 100px;
-}
-
-.stars svg{
-    width: 37px;
-    height: 36px; 
-    fill: none;
-}

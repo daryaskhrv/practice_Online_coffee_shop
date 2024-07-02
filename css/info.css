@@ -1,0 +1,177 @@
+.info{
+    background-color: rgba(238, 239, 241, 1);
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+.info .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info__title{
+    color: #1B1B1D;
+    line-height: 1.3;
+    font-weight: 800;
+    font-size: 8vw;
+    margin: 0;
+}
+
+.info__text{
+    font-weight: 400;
+    color: #64646A;
+    font-size: 1.8vw;
+    width: 90%;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.info__buttons{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.info__buttons button p{
+    font-weight: 500;
+    font-size: 1.4vw;
+}
+
+.info__button-app{
+    background-color: #1B1B1D;
+    cursor: pointer;
+    height: 5.3vw;
+    border: 0;
+    border-radius: 6vw;
+    color: #ffffff;
+    padding: 0 2.5vw 0 2.5vw;
+    margin-right: 3vw;
+}
+
+.info__button-app:hover{
+    background-color: #4f4f4f;
+}
+
+.info__button-shop{
+    cursor: pointer;
+    color: #1B1B1D;
+    border: 0;
+    border-bottom: 2px solid #1B1B1D;
+    height: 3.2vw;
+    padding: 0 2px 0 2px;
+}
+
+.info__button-shop:hover{
+    scale: 1.1;
+}
+
+.info__blok__coffee{
+    grid-column: 2;
+    grid-row: 1 / 4;
+    position: relative;
+}
+
+.info__blok__coffee img{
+    padding-top: 5vw;
+    width: 100%;
+}
+
+.info__rating{
+    position: absolute;
+    background-color: #ffffff;
+    padding: 1.5vw;
+    border-radius: 3vw;
+    width: 52%;
+    top: 59%;
+}
+
+.info__rating p{
+    padding-top: 1.5vw;
+    font-weight: 400;
+    margin: 0;
+    color: #64646A;
+    font-size: 1.6vw;
+}
+
+.stars svg{
+    display: inline-block;
+    width: 2.5vw;
+    height: 2.5vw; 
+    margin: 0;
+    margin-right: -0.5vw;
+    padding: 0;
+    /* fill: none; */
+    vertical-align: middle;
+}
+
+
+
+/* mobile ----------------------------------------------------------------------------------------------*/
+@media (max-width: 650px) {
+    .info{
+        padding-top: 13vh;
+        padding-bottom: 10vh;
+    }
+
+    .info .container{
+        grid-template-columns: 1fr;
+    }
+
+    .info__buttons{
+        grid-row: 4;
+    }
+
+    .info__blok__coffee{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .info__title{
+        line-height: 1.4;
+        font-size: 10vw;
+    }
+    
+    .info__text{
+        font-size: 3vw;
+        width: 70%;
+    }
+
+    .info__blok__coffee img{
+        padding-top: 1vw;
+        width: 70%;
+        margin: 1vw 15%;
+    }
+
+    .info__rating{
+        padding: 2.5vw;
+        border-radius: 3vw;
+        width: 50%;
+        top: 50%;
+    }
+    
+    .info__rating p{
+        padding-top: 1.5vw;
+        font-size: 3vw;
+    }
+    
+    .stars svg{
+        width: 5vw;
+        height: 5vw; 
+        margin-right: -1vw;
+    }
+
+    .info__buttons button p{
+        font-size: 3vw;
+    }
+    
+    .info__button-app{
+        height: 13vw;
+        border-radius: 9vw;
+        padding: 0 5vw 0 5vw;
+        margin-right: 5vw;
+    }
+    
+    .info__button-shop{
+        height: 7vw;
+    }
+    
+}
