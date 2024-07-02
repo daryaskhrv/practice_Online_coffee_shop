@@ -1,0 +1,147 @@
+.services__title{
+    font-weight: 800;
+    text-align: center;
+    display: block;
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+    font-size: 4.3vw;
+    color: #1B1B1D;
+}
+
+.services__text{
+    font-weight: 400;
+    font-size: 1.7vw;
+    width: 50%;
+    margin: 0 auto 6vw auto;
+    display: block;
+    text-align: center;
+    color: #64646A;
+}
+
+.services__cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 5vw auto;
+    width: 96%;
+    justify-content: space-around;
+}
+
+.services__item{
+    background-color: #ffffff;
+    box-shadow: 0 0 50px 1px rgba(138, 138, 138, 0.2);
+    width: 32%;
+    padding: 3vw;
+    border-radius: 3vw;
+    transition: scale 0.1s ease;
+    margin-bottom: 5vw;
+}
+
+.services__item:hover{
+    scale: 1.1;
+}
+
+.item__title{
+    font-weight: 600;
+    color: #1B1B1D;
+    font-size: 2.5vw;
+    margin: 0;
+}
+
+.item__text{
+    font-weight: 400;
+    color: #64646A;
+    font-size: 1.7vw;
+    margin: 1.5vw 0 4vw 0;
+}
+
+.item__svg{
+    display: block;
+    margin: 0 auto 4vw auto;
+    width: 13vw;
+}
+
+.item__button{
+    display: block;
+    background-color: #1B1B1D;
+    cursor: pointer;
+    border: 0;
+    height: 4.7vw;
+    border-radius: 6vw;
+    color: #ffffff;
+    padding: 0 2.5vw 0 2.5vw;
+    margin: 0 auto;
+}
+
+.item__button p{
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+
+.item__button:hover{
+    background-color: #4f4f4f;
+}
+
+@media (max-width: 830px) {
+    .services__item{
+        width: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .services__title{
+        margin-top: 8vw;
+        margin-bottom: 5vw;
+        font-size: 7vw;
+    }
+    
+    .services__text{
+        font-size: 3vw;
+        width: 70%;
+        margin: 0 auto 6vw auto;
+        display: block;
+        text-align: center;
+        color: #64646A;
+    }
+    
+    .services__cards{
+        margin: 0 auto 0 auto;
+        padding-bottom: 8vw;
+        width: 100%;
+    }
+    
+    .services__item{
+        width: 45%;
+        padding: 4vw;
+        border-radius: 5vw;
+        margin-bottom: 5vw;
+    }
+    
+    .services__item:hover{
+        scale: 1.1;
+    }
+    
+    .item__title{
+        font-size: 4.5vw;
+    }
+    
+    .item__text{
+        font-size: 3vw;
+        margin: 1.5vw 0 6vw 0;
+    }
+    
+    .item__svg{
+        margin: 0 auto 6vw auto;
+        width: 18vw;
+    }
+    
+    .item__button{
+        height: 8vw;
+        border-radius: 6vw;
+        color: #ffffff;
+        margin: 0 auto 2vw auto;
+    }
+    
+    .item__button p{
+        font-size: 2.5vw;
+    }
+}
