@@ -1,0 +1,188 @@
+.slider-wrapper {
+    position: relative;
+    padding-inline: 8vw;
+}
+
+
+  
+.swiper::before {
+    content: ""; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 50vw; 
+    height: 30vw; 
+    background-image: radial-gradient(farthest-corner at 20% 20%, rgba(174, 174, 174, 0.1) 50%, rgba(168, 168, 168, 0) 100%); 
+    border-radius: 50%;
+    filter: blur(10px);
+}
+
+.customers__title{
+    width: 40%;
+    line-height: 1.2;
+    font-weight: 800;
+    text-align: center;
+    display: block;
+    margin: 7vw auto 3vw auto;
+    font-size: 4.3vw;
+    color: #1B1B1D;
+}
+
+.customers__rating{
+    width: 35%;
+    margin: 0 auto 6vw auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color: #1B1B1D;
+}
+
+.rating__number{
+    margin: 0;
+    font-weight: 600;
+    font-size: 3vw;
+    text-align: right;
+    padding-right: 1vw;
+}
+
+.rating__text{
+    font-size: 1.5vw;
+    color: #64646A;
+    margin: 0;
+}
+
+.stars_yellow svg{
+    margin-right: -0.3vw;
+}
+
+
+
+
+.card__container {
+    border-radius: 2vw;
+    background-color: #ffffff;
+    box-shadow: 0 0 100px 0.5px rgba(194, 194, 194, 0.2);
+}
+
+.card__header img{
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    width: 100%;
+}
+
+.card__content{
+    width: 80%;
+    margin: 0 auto;
+    padding: 3vw 0 2.3vw 0;
+}
+
+.card__title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.3vw;
+}
+
+.card__title .stars_yellow{
+    padding-top: 0.3vw;
+    padding: 0.3vw 0 0 1vw;
+}
+
+.card__title p{
+    font-weight: 600;
+    font-size: 1.7vw;
+    color: #1B1B1D;
+    margin: 0;
+}
+
+.card__description{
+    font-size: 1.4vw;
+    color: #1B1B1D;
+    margin: 0;
+}
+
+
+
+/* .card__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+    padding: 30px;
+    border: 1px solid #686868;
+    transition: background-color 0.5s;
+} */
+/* .card__status {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-block: 0 20px;
+}
+  
+.card__heading {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+  
+.card__link {
+    color: #fff;
+    border-bottom: 1px solid #0bcf6b;
+    text-decoration: none;
+}
+  
+.card__arrow {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 80px;
+    transition: 0.5s;
+}
+  
+.card:hover {
+    background-color: #0bcf6b;
+}
+  
+.card:hover :is(.card__content, .card__footer) {
+    visibility: hidden;
+    opacity: 0;
+}
+  
+.card:hover .card__arrow {
+    visibility: visible;
+    opacity: 1;
+}
+  
+  
+  /* ------- Стили карусели карточек -------  */
+
+  /* 
+.button-arrow {
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+}
+  
+.button-arrow svg {
+    width: 100%;
+    height: auto;
+    stroke: #0bcf6b;
+}
+  
+.button-arrow:hover svg {
+    stroke: #fff;
+}
+  
+.button-arrow--prev {
+    left: 0;
+}
+  
+.button-arrow--next {
+    right: 0;
+}  */
