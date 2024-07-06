@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer .container{
+    width: 88%;
+    padding: 0;
+    margin: 0 auto;
+    /* width: 100%; */
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    height: 7vw;
+    /* background-color: #bebed8; */
+    border-top: 1px solid #ccc;
+}
+
+.footer a, .footer__right p{
+    color: #64646A;
+    font-weight: 400;
+    font-size: 1.6vw;
+}
+
+.footer__left p{
+    font-weight: 500;
+    font-size: 1.6vw;
+}
+
+@media (max-width: 767px){
+    .footer a, .footer p{
+        font-size: 2.5vw;
+    }
+    
+}
