@@ -1,36 +1,231 @@
+.contacts .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 7vw 0;
+}
+
+.contacts .container p{
+    margin: 0;
+}
+
+.contacts .container h3{
+    margin: 0;
+    font-size: 3vw;
+    font-weight: 700;
+    color: #1B1B1D;
+    margin-bottom: 2.2vw;
+    margin-top: 1vw;
+}
+
+.contacts .container p{
+    font-size: 2.1vw;
+    color: #64646A;
+}
+
+.contacts__mission, .contacts__location{
+    width: 90%;
+}
+
+.contacts__contact, .contacts__connection{
+    margin-left: 30%;
+    width: 70%;
+}
+
+.contacts__mission img{
+    width: 55%;
+    padding-bottom: 3vw;
+}
+
+.contacts__contact div{
+    margin-bottom: 2.2vw;
+}
+
+.contacts__contact button{
+    border: 0;
+    margin-right: 2vw;
+    cursor: pointer;
+    width: 4.5vw;
+    height: 4.5vw;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 12px 30px 0px rgba(205, 209, 214, 0.28);
+}
+
+.contacts__contact button:hover{
+    scale: 1.1;
+    border: 1px solid #64646A;
+}
+
+.contacts__contact button svg{
+    width: 55%;
+    display: block;
+    margin: auto; 
+}
+
+.contact__mail, .contact__number{
+    display: flex;
+    align-items: center;
+}
+
+.contacts__mission, .contacts__contact{
+    margin-bottom: 2vw;
+}
+
+.local__find{
+    display: flex;
+    align-items: center;
+    margin-top: 2vw;
+}
+
+.local__find a{
+    color: #1B1B1D;
+    font-weight: 600;
+    font-size: 1.4vw;
+    text-decoration: none;
+}
+
+.local__find:hover a{
+    text-decoration: underline;
+}
+
+.local__find svg{
+    width: 2vw;
+}
+
+.contacts__connection form input{
+    display: block;
+    margin-bottom: 2vw;
+    width: 95%;
+    font-size: 1.4vw;
+    background-color: #ffffff;
+    cursor: pointer;
+    height: 5.3vw;
+    border: 0;
+    border-radius: 6vw;
+    padding: 0 1vw 0 1vw;
+    box-shadow: 0px 12px 30px 0px rgba(205, 209, 214, 0.28);
+}
+
+.contacts__connection form button{
+    display: block;
+    width: 45%;
+    font-size: 1.4vw;
+    background-color: #1B1B1D;
+    cursor: pointer;
+    height: 5.3vw;
+    border: 0;
+    border-radius: 6vw;
+    color: #ffffff;
+}
+
+.contacts__connection form input::placeholder{
+    padding-left: 1.5vw;
+
+}
+.contacts__connection form button:hover{
+    background-color: #4f4f4f;
+}
 
 
+@media (max-width: 767px){
+    .contacts .container{
+        grid-template-columns: 1fr;
+    }
+    /* grid-column: 1;
+    grid-row: 1 / 4; */
+    .contacts .container h3{
+        font-size: 5vw;
+        margin-bottom: 2.2vw;
+        margin-top: 5vw;
+    }
+    
+    .contacts .container p{
+        font-size: 3vw;
+    }
+    
+    .contacts__contact {
+        grid-row: 3;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .contacts__mission, .contacts__location, .contacts__contact, .contacts__connection{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .contacts__contact div{
+        margin-bottom: 3vw;
+    }
+    
+    .contacts__contact button{
+        margin-right: 4vw;
+        width: 8vw;
+        height: 8vw;
+    }
+    
+    .contacts__contact button:hover{
+        scale: 1.3;
+    }
+    
+    .contact__mail, .contact__number{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: 51vw;
+    }
+    
+    .contacts__mission, .contacts__location, .contacts__contact{
+        margin-bottom: 2vw;
+    }
+    
+    .local__find{
+        justify-content: center;
+    }
+    
+    .local__find a{
+        font-size: 2vw;
+    }
+    
+    .local__find svg{
+        width: 3vw;
+    }
+    .contacts__connection form{
+        width: 55%;
+        margin: 0 auto;
+    }
+    .contacts__connection form input{
+        margin-bottom: 4vw;
+        width: 100%;
+        font-size: 2.5vw;
+        height: 8vw;
+        border-radius: 6vw;
+        padding: 0 1vw 0 1vw;
+    }
+    
+    .contacts__connection form button{
+        width: 70%;
+        font-size: 2.5vw;
+        cursor: pointer;
+        height: 8vw;
+        border-radius: 6vw;
+    }
+    
+    .contacts__connection form input::placeholder{
+        padding-left: 1.5vw;
+    
+    }
+}
 
 
 .footer .container{
     width: 88%;
     padding: 0;
     margin: 0 auto;
-    /* width: 100%; */
     display: flex;
-    
     align-items: center;
     justify-content: space-between;
     height: 7vw;
-    /* background-color: #bebed8; */
     border-top: 1px solid #ccc;
 }
 
@@ -38,6 +233,7 @@
     color: #64646A;
     font-weight: 400;
     font-size: 1.6vw;
+    text-decoration: none;
 }
 
 .footer__left p{
@@ -50,4 +246,7 @@
         font-size: 2.5vw;
     }
     
+    .footer .container{
+        margin-top: 8vw;
+    }
 }
